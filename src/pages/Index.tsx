@@ -18,7 +18,8 @@ export default function Index() {
 					</div>
 				</header>
 				<p> Hi! I am Ruyu Yan (颜如玉), an undergraduate student at Cornell University studying Computer Science. 
-					I do research on Computer Graphics and Human-Computer Interaction, with a focus on AR/VR and image processing. 
+					I do research on Computer Graphics, Vision, and Human-Computer Interaction, with a focus on AR/VR and computational imaging. 
+					I study methods that combine mathematical models of both problems in image processing and user experience to tackle new applications.
 					I am interested in building tools that assist people in exploring the physical world and creating new content.
 				</p>
 				<p> I currently work as a full-time research assistant at Prof. <a href="http://abedavis.com/">Abe Davis</a>&apos;s Lab at Cornell. 

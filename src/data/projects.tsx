@@ -140,7 +140,7 @@ const data = [
           <h4>Description</h4>
           <p>
           Portraits are probably the most popular media of self-representation. There are numerous Apps for processing portraits as 2D images off the shelf. 
-          In this project, we leveraged 3D informataion predicted by deep learning models to develop new portrait editing functionalites, including camera controls, relighting, and face-painting. 
+          In this project, we leveraged 3D information predicted by deep learning models and prototyped a novel portrait editing interface, which enables camera controls, relighting, and face painting. 
           We implemented a web application using <a href="https://threejs.org/">THREE.js</a> and <a href="https://mediapipe.dev/">MediaPipe</a> APIs. We also support semi-automated normal map estimation using <span style={{fontStyle:"italic"}}> InverseRenderNet </span> [1]. 
           Demo link coming soon.
           </p>     
