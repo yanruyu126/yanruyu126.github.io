@@ -49,7 +49,7 @@ const data = [
         <div>
           <h4>Description</h4>
           <p>
-            We developed a deferred shading pipeline that renders a 3D scene in the style of colorful 2D Chinese ink painting. To simulate the freehand painting effect, we will render the silhouette and the interior with stroke detection in different rendering passes. To better render the classic theme of mountain and water <span style={{fontStyle:"italic"}}> (shan shui) </span> in Chinese painting, we rendered water reflection with wave animation. Building on a stylized scene, we furthered implement repainting effects in response to camera motion and calligraphy animations according to the user input. 
+            We developed a deferred shading pipeline that renders a 3D scene in the style of colorful 2D Chinese ink painting. To simulate the freehand painting effect, we will render the silhouette and the interior with stroke detection in different rendering passes. To better render the classic theme of mountain and water <span style={{fontStyle:"italic"}}> (shan shui) </span> in Chinese painting, we rendered water reflection with wave animation. Building on a stylized scene, we furthered implement repainting effects in response to camera motion and calligraphy animations according to the user input. The renderer is implemented with OpenGL.
             See more details in our <a href={`${PUBLIC_URL}/documents/CS_5625_Final_Project_Report.pdf`}>project report</a>.
           </p>     
           <h4>Demo</h4>
@@ -92,6 +92,102 @@ const data = [
         </div>,
       collaborators:  <p>
         Collaborator: <a href="https://mingchiangchang.github.io/">Ming-Chiang Chang</a>
+      </p>
+    },
+    {
+      title: 'Symmetrical Paper Cutting Editor',
+      desc:
+        <div>
+          <h4>Description</h4>
+          <p>
+          We developed a web application to model the Chinese paper cutting art using <a href="https://threejs.org/">THREE.js</a>. We allow the users to fold the paper, cut out some patterns, and unfold to view the result. Paper cutting beginners can then learn to design patterns on our interface without destroying a lot of paper. 
+          Demo link coming soon.
+          </p>     
+          <div style={{display: "flex", flexDirection: "row", justifyContent: "center", padding:"0px 20px 20px 20px"}}>
+            <div className='player-wrapper' style={{width:"60%", padding:"20px"}}>
+            <p style={{textAlign: 'center', fontStyle: 'italic'}}>5x Fast-forwarded Demo Video</p>
+              <ReactPlayer
+              className='react-player fixed-bottom'
+              url= "videos/paper_cut_demo_fast.mp4"
+              width='100%'
+              height='100%'
+              controls = {true}
+              playing 
+              loop
+              />
+            </div>
+            <div style={{flexDirection: "column", width:"40%", padding:"20px"}}>
+              <p style={{textAlign: 'center', fontStyle: 'italic'}}>Example Outputs</p>
+              <div style={{flexDirection: "row", width:"100%"}}>
+                <img style={{width:"50%", paddingRight:"5px"}} src={`${process.env.PUBLIC_URL}${'/images/projects/paper_cut_1.png'}`} />
+                <img style={{width:"50%", paddingLeft:"5px"}} src={`${process.env.PUBLIC_URL}${'/images/projects/paper_cut_2.png'}`} />
+              </div>
+              <div style={{flexDirection: "row", width:"100%"}}>
+                <img style={{width:"50%", paddingRight:"5px"}} src={`${process.env.PUBLIC_URL}${'/images/projects/paper_cut_3.png'}`} />
+                <img style={{width:"50%", paddingLeft:"5px"}} src={`${process.env.PUBLIC_URL}${'/images/projects/paper_cut_4.png'}`} />
+              </div>
+            </div>
+          </div>
+        </div>,
+      collaborators:  <p>
+        Collaborator: <a href="https://www.linkedin.com/in/becky-hu-443199175/">Becky Hu</a>
+      </p>
+    },
+    {
+      title: 'Interactive Portrait Editor',
+      desc:
+        <div>
+          <h4>Description</h4>
+          <p>
+          Portraits are probably the most popular media of self-representation. There are numerous Apps for processing portraits as 2D images off the shelf. 
+          In this project, we leveraged 3D informataion predicted by deep learning models to develop new portrait editing functionalites, including camera controls, relighting, and face-painting. 
+          We implemented a web application using <a href="https://threejs.org/">THREE.js</a> and <a href="https://mediapipe.dev/">MediaPipe</a> APIs. We also support semi-automated normal map estimation using <span style={{fontStyle:"italic"}}> InverseRenderNet </span> [1]. 
+          Demo link coming soon.
+          </p>     
+          <p style={{fontSize:"12px"}}>
+          [1] Ye Yu and William AP Smith. 2019. InverseRenderNet: Learning single image inverse rendering. <span style={{fontStyle:"italic"}}> In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR) </span>.
+          </p>
+          <div style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly", padding:"20px"}}>
+            <div style={{flexDirection: "column", width:"32%"}}>
+              <ReactPlayer
+                className='react-player fixed-bottom'
+                url= "videos/portrait_camera_demo_cropped.mp4"
+                width='100%'
+                height='100%'
+                controls = {true}
+                playing 
+                loop
+              />
+              <p style={{textAlign: 'center', fontStyle: 'italic'}}>Dolly Zoom and Camera Rotation</p>
+            </div>
+            <div style={{flexDirection: "column", width:"32%"}}>
+              <ReactPlayer
+                className='react-player fixed-bottom'
+                url= "videos/portrait_light_demo_cropped.mp4"
+                width='100%'
+                height='100%'
+                controls = {true}
+                playing 
+                loop
+              />
+              <p style={{textAlign: 'center', fontStyle: 'italic'}}>Customized Re-lighting</p>
+            </div>
+            <div style={{flexDirection: "column", width:"32%"}}>
+              <ReactPlayer
+                className='react-player fixed-bottom'
+                url= "videos/portrait_paint_demo_cropped.mp4"
+                width='100%'
+                height='100%'
+                controls = {true}
+                playing 
+                loop
+              />
+              <p style={{textAlign: 'center', fontStyle: 'italic'}}>Face Painting</p>
+            </div>
+          </div>
+        </div>,
+      collaborators:  <p>
+        Collaborator: <a href="https://www.linkedin.com/in/becky-hu-443199175/">Becky Hu</a>
       </p>
     },
   ];

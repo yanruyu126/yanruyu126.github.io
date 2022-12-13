@@ -32,7 +32,7 @@ export default function Misc() {
 			<article className="project-post">
 				<header>
 					<h2>Photography</h2>
-					<p style={{textTransform:"none", fontSize:"10pt"}}>I enjoy recording cherishable with pictures. I mostly do landscape photography, while I am learning to take portraits. Please reach out if you are interested in being my model :)</p>
+					<p style={{textTransform:"none", fontSize:"10pt"}}>I enjoy recording cherishable with pictures. I mostly do landscape photography, while I am learning to take portraits.</p>
 				</header>
 				<div className="description">
 					<div style={{display: "flex", flexDirection: "row", height:"38vh", justifyContent:"space-between"}}> 
