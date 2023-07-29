@@ -4,8 +4,12 @@ import Main from '../layouts/Main';
 
 import data from '../data/project-hightlight';
 import Cell from '../components/cards/ProjectCellSmall';
+import ImageOverText from '../components/cards/ImageOverText';
+
+const { PUBLIC_URL } = process.env;
 
 export default function Index() {
+	const labCatText = <ImageOverText text='Lab Cat' imageLabel='Me and the Lab Cat' imageURL={`${PUBLIC_URL}images/RuyuAndLabCat.jpg`}/>;
   return (
 		<Main
 			title="About"
@@ -17,13 +21,18 @@ export default function Index() {
 					<h2 data-testid="heading"><Link to="/">About Me</Link></h2>
 					</div>
 				</header>
-				<p> Hi! I am Ruyu Yan (颜如玉), an undergraduate student at Cornell University studying Computer Science. 
-					I do research on Computer Graphics, Vision, and Human-Computer Interaction, with a focus on AR/VR and computational imaging. 
-					I study methods that combine mathematical models of both problems in image processing and user experience to tackle new applications.
-					I am interested in building tools that assist people in exploring the physical world and creating new content.
+				<p>
+					I am an incoming Ph.D. student at Princeton University, Department of Computer Science. 
+					My research spans graphics, vision, and HCI, with a focus on AI for content creation and 
+					computational photography. I am interested in exploring methods that combine mathematical 
+					models of both problems in image processing and user experience to tackle new applications. 
 				</p>
-				<p> I currently work as a full-time research assistant at Prof. <a href="http://abedavis.com/">Abe Davis</a>&apos;s Lab at Cornell. 
-					I am applying for Ph.D. programs in Computer Science for Fall 2023. Please contact me if you find my background a good match for your lab!</p>
+				<p>
+					Previously, I completed my undergraduate studies at Cornell University, majoring in Computer 
+					Science and minoring in Psychology. I was fortunate to be advised by Professor <a href="http://abedavis.com/">Abe Davis</a> and 
+					spent two wonderful years with the <a href="https://rgb.cs.cornell.edu/">Cornell Vision & Graphics Group</a>
+					, where I became good friends with the {labCatText}. 
+				</p>
 				<h3>Publication</h3>
 				<p style={{fontSize:"10pt"}}><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. 2022. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22). ACM. https://doi.org/10.1145/3526113.3545641</span></p>
 			</article>

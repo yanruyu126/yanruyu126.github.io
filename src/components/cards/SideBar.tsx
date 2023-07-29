@@ -14,8 +14,8 @@ export default function SideBar() {
 				<img src={`${PUBLIC_URL}/images/portrait.png`} alt="" />
 			</Link>
 			<header>
-				<h2>Ruyu Yan</h2>
-				<p>ry233[at]cornell[dot]edu</p>
+				<h2>Ruyu Yan 颜如玉</h2>
+				<p>CS Ph.D. Student @ Princeton</p>
 			</header>
 			<ul className="actions">
 				<li>
@@ -26,7 +26,7 @@ export default function SideBar() {
 
 			<section id="footer">
 				<ContactIcons />
-				<p className="copyright">&copy; 2022 Ruyu Yan. Powered by <a href="https://mldangelo.com/">mldangelo.com</a>.</p>
+				<p className="copyright">&copy; 2023 Ruyu Yan. Powered by <a href="https://mldangelo.com/">mldangelo.com</a>.</p>
 			</section>
 		</section>
 	)

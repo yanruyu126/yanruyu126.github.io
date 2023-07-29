@@ -187,7 +187,7 @@ const data = [
           </div>
         </div>,
       collaborators:  <p>
-        Collaborator: <a href="https://www.linkedin.com/in/becky-hu-443199175/">Becky Hu</a>
+        Collaborators: Arthur Tan, <a href="https://www.linkedin.com/in/becky-hu-443199175/">Becky Hu</a>, Hunter Sadoff
       </p>
     },
   ];

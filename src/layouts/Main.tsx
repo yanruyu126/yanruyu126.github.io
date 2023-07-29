@@ -9,7 +9,7 @@ import SideBar from '../components/cards/SideBar';
 const Main = (props: any) => (
   <HelmetProvider>
     <ScrollToTop />
-    <Helmet titleTemplate="%s | Ruyu Yan" defaultTitle="Ruyu Yan" defer={false}>
+    <Helmet titleTemplate="Ruyu Yan | %s" defaultTitle="Ruyu Yan" defer={false}>
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
