@@ -22,7 +22,7 @@ export default function Index() {
 					</div>
 				</header>
 				<p>
-					I am an incoming Ph.D. student at Princeton University, Department of Computer Science. 
+					I am a first year CS Ph.D. student at Princeton University. 
 					My research spans graphics, vision, and HCI, with a focus on AI for content creation and 
 					computational photography. I am interested in exploring methods that combine mathematical 
 					models of both problems in image processing and user experience to tackle new applications. 
@@ -33,8 +33,11 @@ export default function Index() {
 					spent two wonderful years with the <a href="https://rgb.cs.cornell.edu/">Cornell Vision & Graphics Group</a>
 					, where I became good friends with the {labCatText}. 
 				</p>
-				<h3>Publication</h3>
-				<p style={{fontSize:"10pt"}}><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. 2022. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22). ACM. https://doi.org/10.1145/3526113.3545641</span></p>
+				<h3>Publications</h3>
+				<div>
+					<p className="publication">Eric Ming Chen, Sidhanth Holalkere, <span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Kai Zhang, and Abe Davis. 2023. Ray Conditioning: Trading Photo-realism for Photo-Consistency in Multi-view Image Generation. <span style={{fontStyle:"italic"}}>IEEE/CVF International Conference on Computer Vision (ICCV '23)</span>. [<a href="ray-cond.github.io">website</a>]</p>
+					<p className="publication"><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. 2022. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22). ACM. https://doi.org/10.1145/3526113.3545641</span>. [<a href="www.cs.cornell.edu/abe/projects/recapture/">website</a>]</p>
+				</div>
 			</article>
 
 			<article className="post" id="index">
