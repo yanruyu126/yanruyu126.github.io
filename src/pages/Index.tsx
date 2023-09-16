@@ -35,8 +35,8 @@ export default function Index() {
 				</p>
 				<h3>Publications</h3>
 				<div>
-					<p className="publication">Eric Ming Chen, Sidhanth Holalkere, <span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Kai Zhang, and Abe Davis. 2023. Ray Conditioning: Trading Photo-realism for Photo-Consistency in Multi-view Image Generation. <span style={{fontStyle:"italic"}}>IEEE/CVF International Conference on Computer Vision (ICCV '23)</span>. [<a href="ray-cond.github.io">website</a>]</p>
-					<p className="publication"><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. 2022. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22). ACM. https://doi.org/10.1145/3526113.3545641</span>. [<a href="www.cs.cornell.edu/abe/projects/recapture/">website</a>]</p>
+					<p className="publication">Eric Ming Chen, Sidhanth Holalkere, <span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Kai Zhang, and Abe Davis. 2023. Ray Conditioning: Trading Photo-realism for Photo-Consistency in Multi-view Image Generation. <span style={{fontStyle:"italic"}}>IEEE/CVF International Conference on Computer Vision (ICCV '23)</span>. [<a href="http://ray-cond.github.io">website</a>]</p>
+					<p className="publication"><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. 2022. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22). ACM. https://doi.org/10.1145/3526113.3545641</span>. [<a href="http://www.cs.cornell.edu/abe/projects/recapture/">website</a>]</p>
 				</div>
 			</article>
 
