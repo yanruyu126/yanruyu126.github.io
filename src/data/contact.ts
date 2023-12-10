@@ -22,7 +22,7 @@ const data = [
     icon: faLinkedinIn,
   },
   {
-    link: 'https://scholar.google.com/citations?user=sJs6B-QAAAAJ',
+    link: 'https://scholar.google.com/citations?user=ILEM6EIAAAAJ&hl=en&oi=ao',
     label: 'Google Scholar',
     icon: faGraduationCap,
   },
