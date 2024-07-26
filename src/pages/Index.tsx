@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 
-import data from '../data/project-hightlight';
-import Cell from '../components/cards/ProjectCellSmall';
+import publications from '../data/publications';
+import PublicationCell from '../components/cards/PublicationCell';
 import ImageOverText from '../components/cards/ImageOverText';
 
 const { PUBLIC_URL } = process.env;
@@ -22,7 +22,7 @@ export default function Index() {
 					</div>
 				</header>
 				<p>
-					I am a first year CS Ph.D. student at Princeton University. 
+					I am a second year CS Ph.D. student at Princeton University working with Professors <a href="https://www.cs.princeton.edu/~af/">Adam Finkelstein</a> and <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>.
 					My research spans graphics, vision, and HCI, with a focus on AI for content creation and 
 					computational photography. I am interested in exploring methods that combine mathematical 
 					models of both problems in image processing and user experience to tackle new applications. 
@@ -33,26 +33,27 @@ export default function Index() {
 					spent two wonderful years with the <a href="https://rgb.cs.cornell.edu/">Cornell Vision & Graphics Group</a>
 					, where I became good friends with the {labCatText}. 
 				</p>
-				<h3>Publications</h3>
+				{/* <h3>Publications</h3>
 				<div>
-					<p className="publication">Eric Ming Chen, Sidhanth Holalkere, <span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Kai Zhang, and Abe Davis. 2023. Ray Conditioning: Trading Photo-realism for Photo-Consistency in Multi-view Image Generation. <span style={{fontStyle:"italic"}}>IEEE/CVF International Conference on Computer Vision (ICCV '23)</span>. [<a href="http://ray-cond.github.io">website</a>]</p>
-					<p className="publication"><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. 2022. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22). ACM. https://doi.org/10.1145/3526113.3545641</span>. [<a href="http://www.cs.cornell.edu/abe/projects/recapture/">website</a>]</p>
-				</div>
+				<p className="publication">Ilya Chugunov, David Shustin, <span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Chenyang Lei, and Felix Heide. Neural Spline Fields for Burst Image Fusion and Layer Separation. <span style={{fontStyle:"italic"}}>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR '24)</span>. [<a href="https://light.princeton.edu/publication/nsf/">website</a>]</p>
+					<p className="publication">Eric Ming Chen, Sidhanth Holalkere, <span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Kai Zhang, and Abe Davis. Ray Conditioning: Trading Photo-realism for Photo-Consistency in Multi-view Image Generation. <span style={{fontStyle:"italic"}}>IEEE/CVF International Conference on Computer Vision (ICCV '23)</span>. [<a href="http://ray-cond.github.io">website</a>]</p>
+					<p className="publication"><span style={{fontWeight:"bold"}}>Ruyu Yan</span>, Jiatian Sun, Longxiulin Deng, and Abe Davis. ReCapture: AR-Guided Time-lapse Photography. <span style={{fontStyle:"italic"}}>In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22)</span>. [<a href="http://www.cs.cornell.edu/abe/projects/recapture/">website</a>]</p>
+				</div> */}
 			</article>
 
 			<article className="post" id="index">
 				<header>
 					<div className="title">
-					<h2 data-testid="heading">Project Highlights</h2>
-					<p>See full listing of my projects <Link to="/projects">here</Link></p>
+					<h2 data-testid="heading">Publications</h2>
 					</div>
 				</header>
-				{data.map((project) => (
-					<Cell
-					data={project}
-					key={project.title}
+				{publications.map((project) => (
+					<PublicationCell
+						data={project}
+						key={project.title}
 					/>
 				))}
+				{/* <p>See more of my projects <Link to="/projects">here</Link></p> */}
 			</article>
 		</Main>
 	)

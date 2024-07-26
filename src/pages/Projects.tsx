@@ -13,9 +13,9 @@ export default function Projects() {
 		>
 		<header>
 			<div className="title">
-			<h1 data-testid="heading"><Link to="/">Project Page</Link></h1>
+			<h1 data-testid="heading"><Link to="/projects">Project Page</Link></h1>
 			<p>
-				A collection of my past projects in computer graphics, vision, and HCI.
+				A collection of my past projects. See my most up-to-date publications <Link to="/">here</Link>.
 			</p>
 			</div>
 		</header>

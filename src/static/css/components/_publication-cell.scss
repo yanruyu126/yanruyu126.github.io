@@ -1,0 +1,79 @@
+.publication-cell-container {
+  position: relative;
+
+  .description {
+    padding: 0;
+    bottom: 0;
+    border-top: solid 1px _palette(border);
+
+    p {
+      font-size: 0.9rem;
+      margin: 0;
+      // padding: 1.25em;
+      background-color: rgba(255,255,255,.7);
+      color: #3c3b3b;
+      font-family: "Raleway", Helvetica, sans-serif;
+      z-index: 1000;
+      transition: all 0.1s;
+      -webkit-transition: all 0.1s ease-in-out;
+    }
+  }
+
+  header {
+    h3 {
+      letter-spacing: _font(kerning-heading-tight);
+    }
+
+    p {
+      letter-spacing: _font(kerning-heading-tight);
+      margin-bottom: 5px;
+    }
+
+    .website-link {
+      border-bottom: none;
+      font-weight: _font(weight-bold);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description {
+      position: inherit;
+      padding: 0;
+      bottom: inherit;
+    }
+  }
+}
+
+.figure-container {
+  position: relative;
+}
+
+.figure-container img,
+.figure-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.figure-container .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.figure-container:hover .hover-image {
+  opacity: 1;
+}
+
+.figure-container .main-image {
+  transition: opacity 0.5s ease;
+}
+
+.figure-container:hover .main-image {
+  opacity: 0;
+}

@@ -26,7 +26,7 @@ export default function SideBar() {
 
 			<section id="footer">
 				<ContactIcons />
-				<p className="copyright">&copy; 2023 Ruyu Yan. Powered by <a href="https://mldangelo.com/">mldangelo.com</a>.</p>
+				<p className="copyright">&copy; 2024 Ruyu Yan. Powered by <a href="https://mldangelo.com/">mldangelo.com</a>.</p>
 			</section>
 		</section>
 	)
