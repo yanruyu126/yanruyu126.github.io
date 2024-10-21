@@ -1,5 +1,22 @@
 const publications = [
   {
+    title: "Chromaticity Gradient Mapping for Interactive Control of Color Contrast in Images and Video",
+    figure: {
+      src1: "images/publications/chromap-preview.mp4",
+      isImage: false
+    },
+    authors: [
+      { name: "Ruyu Yan" },
+      { name: "Jiatian Sun", link: "https://jiatiansun.github.io/" },
+      { name: "Abe Davis", link: "http://abedavis.com/" }
+    ],
+    conference: "UIST",
+    year: "2024",
+    paperLink: "https://www.cs.cornell.edu/abe/projects/CGC/home/ChromaGradientMap_UIST24.pdf",
+    projectLink: "https://www.cs.cornell.edu/abe/projects/CGC/home/",
+    desc: "We present a novel perceptually-motivated interactive tool for using color contrast to enhance details represented in the lightness channel of images and video."
+  },
+  {
     title: "Neural Spline Fields for Burst Image Fusion and Layer Separation",
     figure: {
       src1: "images/publications/nsf_animation.mp4",
@@ -42,7 +59,7 @@ const publications = [
   {
     title: "ReCapture: AR-Guided Time-lapse Photography",
     figure: {
-      src1: "images/publications/recapture.png",
+      src1: "images/publications/recapture-preview.jpg",
       isImage: true
     },
     authors: [

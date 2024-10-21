@@ -19,7 +19,7 @@ export default function SideBar() {
 			</header>
 			<ul className="actions">
 				<li>
-					<a className="button" href={`${PUBLIC_URL}/documents/Ruyu_Yan_Resume_aug23.pdf`}>Resume</a>
+					<a className="button" href={`${PUBLIC_URL}/documents/Ruyu_CV_Oct24.pdf`}>curriculum vitae</a>
 				</li>
 			</ul>
 			</section>

@@ -53,7 +53,7 @@ export default function Index() {
 						key={project.title}
 					/>
 				))}
-				{/* <p>See more of my projects <Link to="/projects">here</Link></p> */}
+				<div style={{height:"30px"}}/> {/* spacer */}
 			</article>
 		</Main>
 	)
