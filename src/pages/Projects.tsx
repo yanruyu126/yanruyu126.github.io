@@ -11,23 +11,19 @@ export default function Projects() {
 			description="Ruyu's Past Projects"
 			fullPage
 		>
-		<header>
-			<div className="title">
-			<h1 data-testid="heading"><Link to="/projects">Project Page</Link></h1>
-			<p>
-				A collection of my past projects. See my most up-to-date publications <Link to="/">here</Link>.
-			</p>
+			<div id="projects-page">
+				<div className="page-header">
+					<h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
+					<p>A collection of my past projects. See my most up-to-date publications <Link to="/">here</Link>.</p>
+				</div>
+				{data.map((project) => (
+					<Cell
+						data={project}
+						key={project.title}
+					/>
+				))}
+				<p className="more-coming">More coming soon...</p>
 			</div>
-		</header>
-		{data.map((project) => (
-				<Cell
-				data={project}
-				key={project.title}
-				/>
-			))}
-		<div className="cell-container project-post">
-			<h5 style={{padding:"20px 20px 10px 20px", textAlign:"center"}}> More Coming Soon... </h5>
-		</div>
 		</Main>
-	)
+	);
 }

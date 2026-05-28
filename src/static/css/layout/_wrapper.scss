@@ -10,11 +10,12 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'row-reverse');
 		@include vendor('transition', 'opacity #{_duration(menu)} ease');
+		background: _palette(bg);
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 1080px;
 		opacity: 1;
 		padding: (_size(section-spacing) * 1.5);
-		width: 90em;
+		width: 100%;
 
 		body.is-menu-visible & {
 			opacity: 0.15;

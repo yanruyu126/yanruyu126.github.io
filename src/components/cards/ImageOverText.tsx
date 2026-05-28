@@ -1,8 +1,7 @@
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import PhotoCard from './PhotoCard';
 
-function ImageOverText(props: { text: string, imageLabel: string, imageURL: string }) {
+function ImageOverText(props: { text: string; imageLabel: string; imageURL: string }) {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseEnter = () => {
@@ -33,7 +32,12 @@ function ImageOverText(props: { text: string, imageLabel: string, imageURL: stri
     >
       {isHovering && (
         <div style={imageCardStyle}>
-          <PhotoCard imageURL={props.imageURL} description={props.imageLabel} textPadding={10}/>
+          <PhotoCard
+            imageURL={props.imageURL}
+            description={props.imageLabel}
+            textPadding={10}
+            imgStyle={{ width: '100%', height: 'auto' }}
+          />
         </div>
       )}
       {props.text}

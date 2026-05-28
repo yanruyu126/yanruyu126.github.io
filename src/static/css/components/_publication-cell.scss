@@ -56,7 +56,7 @@
 
 .figure-container {
   position: relative;
-  width: 30%;
+  width: 25%;
   aspect-ratio: 1;
   display: flex;
   flex-direction: column;
@@ -79,21 +79,12 @@
 /* Media query for small screens */
 @media (max-width: 768px) {
   .publication-cell-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 30px;
 
     .card-text {
-      width: 100%;
-      order: 0;
       margin: 0;
     }
-    padding-bottom: 30px;
-  }
-
-  .figure-container {
-    width: 60%;
-    aspect-ratio: auto;
-    order: 1;
   }
 }

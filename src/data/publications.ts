@@ -1,5 +1,26 @@
 const publications = [
   {
+    title: "Lucky High Dynamic Range Smartphone Imaging",
+    figure: {
+      src1: "images/publications/luckyhdr-preview.mp4",
+      isImage: false
+    },
+    authors: [
+      { name: "Baiang Li*", link: "https://ztmotalee.github.io/"},
+      { name: "Ruyu Yan*" },
+      { name: "Ethan Tseng", link: "https://ethan-tseng.github.io/" },
+      { name: "Zhoutong Zhang", link: "https://ztzhang.info/" },
+      { name: "Adam Finkelstein", link: "https://www.cs.princeton.edu/~af/" },
+      { name: "Jiawen Chen", link: "https://people.csail.mit.edu/jiawen/" },
+      { name: "Felix Heide", link: "https://www.cs.princeton.edu/~fheide/" }
+    ],
+    conference: "SIGGRAPH (ACM TOG)",
+    year: "2026",
+    paperLink: "https://arxiv.org/pdf/2604.19976",
+    projectLink: "https://lucky-hdr.github.io/",
+    desc: "A lightweight HDR imaging system that performs iterative align-and-merge on handheld exposure-bracketed bursts, reconstructing up to 20 stops of dynamic range through convex combinations of input pixels while avoiding hallucination artifacts."
+  },
+  {
     title: "Chromaticity Gradient Mapping for Interactive Control of Color Contrast in Images and Video",
     figure: {
       src1: "images/publications/chromap-preview.mp4",
@@ -14,7 +35,7 @@ const publications = [
     year: "2024",
     paperLink: "https://www.cs.cornell.edu/abe/projects/CGC/home/ChromaGradientMap_UIST24.pdf",
     projectLink: "https://www.cs.cornell.edu/abe/projects/CGC/home/",
-    desc: "We present a novel perceptually-motivated interactive tool for using color contrast to enhance details represented in the lightness channel of images and video."
+    desc: "A novel perceptually-motivated interactive tool for using color contrast to enhance details represented in the lightness channel of images and video."
   },
   {
     title: "Neural Spline Fields for Burst Image Fusion and Layer Separation",

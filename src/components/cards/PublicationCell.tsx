@@ -32,21 +32,6 @@ interface PublicationCellProps {
   data: PublicationData;
 }
 
-// const PublicationCellFigure: React.FC<PublicationCellFigureProps> = ({ data, link }) => (
-//   <div className="figure-container">
-//     <a href={link}>
-//       {data.isImage ? (
-//         <div className="image-container">
-//           <img src={`${process.env.PUBLIC_URL}${data.src1}`} className="main-image" />
-//           <img src={`${process.env.PUBLIC_URL}${data.src2 ? data.src2 : data.src1}`} className="hover-image" />
-//         </div>
-//       ) : (
-//         <video src={`${process.env.PUBLIC_URL}${data.src1}`} autoPlay loop muted playsInline />
-//       )}
-//     </a>
-//   </div>
-// );
-
 const PublicationCellFigure: React.FC<PublicationCellFigureProps> = ({ data, link }) => {
   const [currentSrc, setCurrentSrc] = useState(data.src1);
   
@@ -85,25 +70,27 @@ const PublicationCell: React.FC<PublicationCellProps> = ({ data }) => (
     <div className="card-text">
       <header>
         <h3><a href={data.projectLink}>{data.title}</a></h3>
-        <p>
+        <div>
+          <p style={{lineHeight: "1.5em"}}>
           {data.authors.map((author, index) => (
             <React.Fragment key={index}>
               {author.link ? (
                 <a
                   href={author.link}
-                  style={{ fontWeight: author.name === "Ruyu Yan" ? 'bold' : 'normal' }}
+                  style={{ fontWeight: author.name.includes("Ruyu") ? 'bold' : 'normal' }}
                 >
                   {author.name}
                 </a>
               ) : (
-                <span style={{ fontWeight: author.name === "Ruyu Yan" ? 'bold' : 'normal' }}>
+                <span style={{ fontWeight: author.name.includes("Ruyu") ? 'bold' : 'normal' }}>
                   {author.name}
                 </span>
               )}
               {index < data.authors.length - 1 && ', '}
             </React.Fragment>
           ))}
-          <p style={{fontSize: "0.75rem", fontStyle: "italic"}}>{data.conference}, {data.year}</p>
+          </p>
+          <p style={{fontSize: "0.75rem", fontStyle: "italic", marginTop: "-5px"}}>{data.conference}, {data.year}</p>
           <p style={{fontSize: "0.75rem"}}>
             {data.projectLink && <a className="website-link" href={data.projectLink}>project website</a>}
             {data.paperLink && data.projectLink && ' / '}
@@ -111,7 +98,7 @@ const PublicationCell: React.FC<PublicationCellProps> = ({ data }) => (
             {data.paperLink && data.codeLink && ' / '}
             {data.codeLink && <a className="website-link" href={data.codeLink}>code</a>}
           </p>
-        </p>
+        </div>
       </header>
       <div className="description">
         <p>{data.desc}</p>
